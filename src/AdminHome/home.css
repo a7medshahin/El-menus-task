@@ -1,0 +1,190 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+.admin {
+    line-height: 1;
+}
+.admin .logout-btn{
+    margin:  3% 0px;
+    width: 170px;
+}
+ol, ul {
+    list-style: none;
+}
+
+.admin table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.admin caption,.admin th,.admin td {
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle;
+}
+
+.admin q,.admin blockquote {
+    quotes: none;
+}
+.admin q:before,.admin q:after,.admin blockquote:before,.admin blockquote:after {
+    content: "";
+    content: none;
+}
+
+.admin a img {
+    border: none;
+}
+
+/* fontawesome */
+[class*="fa-"]:before {
+    font-family: 'FontAwesome', sans-serif;
+}
+
+.admin {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1em;
+    text-align: center;
+    color: #444444;
+    background-color: #ffffff;
+}
+
+.admin h1 {
+    font-size: 2.5em;
+    margin: 2em 0 1em;
+}
+.admin h2 {
+    margin-bottom: 3em;
+}
+.admin em,
+.admin strong {
+    font-weight: 700;
+}
+.admin input {
+    display: none;
+}
+.admin header p {
+    margin-bottom: 2em;
+}
+.admin section {
+    margin-bottom: 2em;
+    padding: 0;
+}
+.admin section:last-of-type {
+    margin-bottom: 0;
+}
+.admin p {
+    line-height: 1.5em;
+}
+.admin .container {
+    z-index: 1;
+    margin-bottom: 4em;
+}
+.admin .pure-tree {
+    text-align: left;
+    display: block;
+}
+.admin .pure-tree.main-tree {
+    width: 30em;
+    display: inline-block;
+}
+.admin .pure-tree:not(.main-tree) {
+    padding-left: 1.2em;
+    margin-top: 7px;
+}
+.admin .pure-tree:not(.main-tree) li {
+    overflow: hidden;
+    height: 0;
+    display: block;
+}
+.admin .pure-tree label {
+    display: block;
+    cursor: pointer;
+    color: #717780;
+    border-bottom: 1px dashed #B0B9C5;
+    padding: 1.125em 1.125em 1.125em 0;
+}
+.admin .pure-tree label:before {
+    width: 1em;
+    height: 1em;
+    line-height: 1em;
+    display: inline-block;
+    font-family: 'FontAwesome', sans-serif;
+    content: "\f0c9";
+    padding-right: 1.5em;
+}
+.admin .pure-tree label:hover {
+    color: #434a58;
+    border-bottom-color: #434a58;
+}
+.admin .pure-tree .pure-tree_link a {
+    padding: 1.500em 1.125em 0.750em 0;
+    display: block;
+    border-radius: .2em;
+    color: #717780;
+    text-decoration: none;
+}
+.admin .pure-tree .pure-tree_link a:hover {
+    color: #434a58;
+}
+.admin .pure-tree.nested {
+    padding-left: 1.7em;
+}
+.admin .pure-tree [type="checkbox"] {
+    display: none;
+}
+.admin .pure-tree [type="checkbox"]:checked + label {
+    color: #434a58;
+    border-bottom-color: #434a58;
+}
+.admin .pure-tree [type="checkbox"]:checked ~ ul > li {
+    height: auto;
+}
+.admin .head-title{
+    display: inline-block;
+    width: 35%;
+}
+.admin .pure-tree_link .description{
+    background: #d9e9ff;
+    padding: 3px 10px;
+    display: block;
+}
+.admin .pure-tree .pure-tree_link:first-child .head-title {
+    width: 38% !important;
+}
+.home .pure-tree .pure-tree_link:first-child .head-title {
+    width: 35% !important;
+
+}
+.admin .pure-tree_link body-title{
+    display: inline-block;
+
+}
+.admin .input {
+    width: 100%;
+}
+.admin .icon{
+    position: relative;
+    top: -45px;
+    float: right;
+    font-size: 1.5em !important;
+}
+.item-li{
+    margin-bottom: -18px;
+}
+.single-item{
+    margin-bottom: 18px;
+}
+.ReactModal__Overlay{
+background-color: rgba(38, 38, 38, 0.90) !important;
+}
+.admin .pure-tree_link:first-child{
+    display: block !important;
+    /*width: 100%;*/
+}
+.admin .ui input{
+    display: inline-block;
+    font-size: 70%;
+    margin: 0px 10px;
+}
