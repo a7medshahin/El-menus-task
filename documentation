@@ -1,0 +1,25 @@
+
+
+
+
+[Firstly i divided the views into three main views]
+1- Login
+2- Home
+3- AdminHome
+
+[And i used localstorage to state login status and function Auth() to check it]
+
+[And create Category Component to use it in both views (Home , AdminHome)]
+
+in Category Component i used
+
+# CategoryList
+    to List all categories
+# ItemList
+    to list all items
+# ItemInfo
+    to list single item
+
+The task is not complete
+
+* Create and Edit and delete actions it's not completed

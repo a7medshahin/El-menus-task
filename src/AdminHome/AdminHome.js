@@ -17,7 +17,6 @@ class AdminHome extends Component {
         });
     }
     Logout(){
-        // console.log(props);
         this.props.history.push('/');
         localStorage.removeItem('admin')
 

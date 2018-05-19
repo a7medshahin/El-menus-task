@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Modal from 'react-modal';
 // import { BrowserRouter as Router, Route } from "react-router-dom";
 
+// custome style to the edit modal
 const customStyles = {
     content : {
         top                   : '50%',
@@ -12,14 +13,15 @@ const customStyles = {
         transform             : 'translate(-50%, -50%)'
     }
 };
+// bind modal to the app element
 Modal.setAppElement('#root');
 
 class CategoryList extends Component {
+
     constructor(props){
         super();
         let showme=props.isLogged();
         this.state = {categories:props.allCategories,modalIsOpen: false,showMe:showme}
-        console.log(this.state.showMe);
         this.openModal = this.openModal.bind(this);
         this.afterOpenModal = this.afterOpenModal.bind(this);
         this.closeModal = this.closeModal.bind(this);
@@ -41,6 +43,7 @@ class CategoryList extends Component {
                     </ul>
             );
         }
+        
     // view All items in one category
     ItemList(ItemsList) {
         const items = ItemsList;
@@ -69,7 +72,6 @@ class CategoryList extends Component {
     // view All category
     CategoryList(categoriesList) {
             const categories = categoriesList;
-            // console.log(categories);
             const listCategories = categories.map((category) =>
                 <li  key={category.id}>
                     <input type="checkbox" id={category.id}/>
@@ -91,15 +93,13 @@ class CategoryList extends Component {
             );
         }
 
-    // Edit item modal
     openModal() {
         this.setState({modalIsOpen: true});
 
     }
 
     afterOpenModal() {
-        // references are now sync'd and can be accessed.
-        // this.subtitle.style.color = '#f00';
+
     }
 
     closeModal() {
@@ -109,13 +109,14 @@ class CategoryList extends Component {
     render() {
         return (
             <div>
+
                 <Modal
                     isOpen={this.state.modalIsOpen}
                     onAfterOpen={this.afterOpenModal}
                     onRequestClose={this.closeModal}
                     contentLabel="Example Modal"
-                    style={customStyles}
-                >
+                    style={customStyles}>
+
                     <form className="ui form">
                         <div className="equal width fields">
                             <div className="field">
@@ -141,7 +142,10 @@ class CategoryList extends Component {
                         </div>
                     </form>
                 </Modal>
+
+
                 {this.CategoryList(this.state.categories)}
+
             </div>
         );
     }
